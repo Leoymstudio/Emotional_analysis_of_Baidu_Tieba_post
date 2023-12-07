@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #16222A 0%, #3A6073 100%); /* 深邃的海洋蓝渐变背景 */
+    color: white;
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(to right, #00C9FF, #92FE9D); /* 从明亮的天蓝色渐变到清新的银灰色 */
+    padding: 40px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background-color: #008cff; /* 按钮背景色 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0066cc; /* 鼠标悬停时按钮背景色变化 */
+}
+
+.image {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明底部背景 */
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}

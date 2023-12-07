@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Data Analysis Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Advanced Data Analysis Platform</h1>
+    </div>
+
+    <div class="main-content">
+        <section id="web-crawler">
+            <h2>Web Crawler</h2>
+            <p>Interface for web crawling functionality.</p>
+            <button class="button" onclick="toggleImage('image1')">Show Crawler Image</button>
+            <img id="image1" class="image" src="C:\Users\rcw25\Desktop\wangtu.jpg" alt="Crawler Image">
+        </section>
+
+        <section id="data-analysis">
+            <h2>Data Analysis</h2>
+            <p>Interface for data analysis functionality.</p>
+            <button class="button" onclick="toggleImage('image2')">Show Analysis Image</button>
+            <img id="image2" class="image" src="C:\Users\rcw25\Desktop\wangtu.jpg" alt="Analysis Image">
+        </section>
+
+        <section id="time-series-graph">
+            <h2>Time Series Graph</h2>
+            <p>Display time series data here.</p>
+            <button class="button" onclick="toggleImage('image3')">Show Graph Image</button>
+            <img id="image3" class="image" src="C:\Users\rcw25\Desktop\wangtu.jpg" alt="Graph Image">
+        </section>
+
+        <section id="geographical-map">
+            <h2>Geographical Map</h2>
+            <p>Display geographical data here.</p>
+            <button class="button" onclick="toggleImage('image4')">Show Map Image</button>
+            <img id="image4" class="image" src="C:\Users\rcw25\Desktop\wangtu.jpg" alt="Map Image">
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Advanced Data Analysis. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleImage(imageId) {
+            var image = document.getElementById(imageId);
+            if (image.style.display === "none") {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
